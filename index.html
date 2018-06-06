@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="">
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <title>De la Mano del Diez</title>
+   <!-- Favicon -->
+   <link rel="shortcut icon" href="favicon.png">
+   <!-- Styles -->
+   <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="loading">
+
+   <!-- loader -->
+   <div class="loader">
+      <div class="load"></div>
+   </div>
+
+   <!-- top bar -->
+   <div class="top-bar">
+      <nav class="navigation-wrapper">
+         <ul class="navigation">
+            <li class="nav-list">
+               <a class="nav-link" href="#el-diego" data-number="1">El Diego</a>
+            </li>
+            <li class="nav-list">
+               <a class="nav-link" href="#videos" data-number="2">Videos</a>
+            </li>
+            <li class="nav-list">
+               <a class="nav-link" href="#fotos" data-number="3">Fotos</a>
+            </li>
+         </ul>
+      </nav>
+      <div class="brand">
+         <a href="https://www.telesurtv.net" target="_blank">
+            <img class="logo" src="images/telesur-logo.svg" alt="">
+         </a>
+      </div>
+   </div>
+   <!-- ./top bar -->
+
+   <!-- hero -->
+   <header id="hero" class="hero">
+
+      <!-- triangle shape -->
+      <svg class="triangle">
+         <polygon points='0, 600, 0, 100, 0, 0, 500, 0' fill='#FFF' id='triangle'></polygon>
+      </svg>
+
+      <!-- hashtag -->
+      <p class="hashtag">#DeLaManoDelDiez</p>
+
+      <!-- main logo -->
+      <div class="main-logo__container">
+         <svg class="main-logo" version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 491.2 613.7">
+            <g opacity="1">
+               <g>
+                  <path class="diez" fill="#E3222F" d="M47 438v109.8H20.5v-87H0V438H47zM100.7 545.7c-7.2-3-13.3-7.1-18.4-12.4-5.1-5.2-8.9-11.3-11.6-18.2-2.7-6.9-4-14.3-4-22.2 0-7.8 1.3-15.2 4-22.2 2.7-7 6.6-13.1 11.6-18.3 5.1-5.2 11.2-9.4 18.4-12.4 7.2-3 15.4-4.5 24.5-4.5s17.4 1.5 24.7 4.5c7.3 3 13.5 7.1 18.6 12.4 5.1 5.2 8.9 11.3 11.6 18.3 2.7 7 4 14.3 4 22.2 0 7.9-1.3 15.3-4 22.2-2.7 6.9-6.6 13-11.6 18.2-5.1 5.2-11.3 9.4-18.6 12.4-7.3 3-15.6 4.5-24.7 4.5S107.9 548.7 100.7 545.7zM137.6 522.3c3.8-1.5 7.2-3.7 10.1-6.4 2.9-2.7 5.1-6.1 6.7-10 1.6-3.9 2.4-8.2 2.4-13 0-4.8-.8-9.1-2.4-13-1.6-3.9-3.8-7.2-6.7-10-2.9-2.7-6.2-4.9-10.1-6.4-3.8-1.5-8-2.3-12.4-2.3-4.4 0-8.5.8-12.3 2.3s-7.1 3.7-9.9 6.4c-2.8 2.7-5 6.1-6.6 10-1.6 3.9-2.4 8.2-2.4 13 0 4.8.8 9.1 2.4 13 1.6 3.9 3.8 7.2 6.6 10 2.8 2.7 6.1 4.9 9.9 6.4s7.9 2.3 12.3 2.3C129.6 524.6 133.7 523.8 137.6 522.3z"/>
+               </g>
+               <circle class="point" fill="#E3222F" cx="33.5" cy="598.7" r="15"/>
+               <path class="mano" fill="#E3222F" d="M59.8 226.1h-4.6l-28.9-28.2v57.8H0V145.9h7.1l50 47 50.7-47h7v109.8H88.4v-57.6L59.8 226.1zM185.9 145.9l57.6 109.8h-30l-6-13h-47.8l-5.9 13h-29.8l57.5-109.8H185.9zM182.8 192.4l-13.5 28.7-1.6 2.9h31.8l-1.6-2.9-13.5-28.7H182.8zM350.1 255.7l-71-60.6v60.6h-26.4V145.9h6l71 58.2v-58h26.4v109.6H350.1zM407.7 253.6c-7.2-3-13.3-7.1-18.4-12.4-5.1-5.2-8.9-11.3-11.6-18.2-2.7-6.9-4-14.3-4-22.2 0-7.8 1.3-15.2 4-22.1 2.7-7 6.6-13.1 11.6-18.3 5.1-5.2 11.2-9.4 18.4-12.4 7.2-3 15.4-4.5 24.5-4.5s17.4 1.5 24.7 4.5c7.3 3 13.5 7.1 18.6 12.4s8.9 11.3 11.6 18.3c2.7 7 4 14.3 4 22.1 0 7.9-1.3 15.3-4 22.2-2.7 6.9-6.6 13-11.6 18.2s-11.3 9.4-18.6 12.4c-7.3 3-15.6 4.5-24.7 4.5S414.9 256.6 407.7 253.6zM444.6 230.2c3.8-1.5 7.2-3.7 10.1-6.4 2.9-2.7 5.1-6.1 6.7-10 1.6-3.9 2.4-8.2 2.4-13 0-4.8-.8-9.1-2.4-13-1.6-3.9-3.8-7.2-6.7-10-2.9-2.7-6.2-4.9-10.1-6.4-3.8-1.5-8-2.3-12.4-2.3s-8.5.8-12.3 2.3c-3.8 1.5-7.1 3.7-9.9 6.4-2.8 2.7-5 6.1-6.6 10-1.6 3.9-2.4 8.2-2.4 13 0 4.8.8 9.1 2.4 13 1.6 3.9 3.8 7.2 6.6 10 2.8 2.7 6.1 4.9 9.9 6.4 3.8 1.5 7.9 2.3 12.3 2.3S440.8 231.7 444.6 230.2z"/>
+               <g class="first-l">
+                  <rect x="287.5" y="102.3" fill="#E3222F" width="50.9" height="7.5"/>
+                  <polygon fill="#E3222F" points="271.4,102.3 271.4,50.2 271.4,0 263.3,0 263.3,109.8 271.4,109.8"/>
+               </g>
+               <polygon class="a" fill="#E3222F" points="396.8,0 394.6,0 341.9,109.8 350.8,109.8 394.9,16.5 396.2,16.5 424.4,77 425.5,79.4 383.5,79.4 379.9,87.1 429.3,87.1 440.5,109.8 449.6,109.8"/>
+               <g class="last-e">
+                  <rect x="144.4" y="343.7" fill="#E3222F" width="45.6" height="7.5"/>
+                  <polygon fill="#E3222F" points="198.4,291.9 120.2,291.9 120.2,401.7 198.4,401.7 198.4,394.2 128.3,394.2 128.3,362.2 128.3,351.2 128.3,343.7 128.3,338.1 128.3,299.4 198.4,299.4"/>
+               </g>
+               <path class="ds" fill="#E3222F" d="M89.9 323.7c-2.9-6.8-7-12.6-12.3-17.3-5.2-4.7-11.4-8.3-18.6-10.8-7.1-2.5-15-3.8-23.5-3.8H0v59.3h8.1v-51.8h27.1c7.1 0 13.7 1.1 19.9 3.2s11.6 5.2 16.2 9.3c4.6 4.1 8.2 9.1 10.8 14.9 2.6 5.9 3.9 12.5 3.9 19.9 0 7.4-1.3 14.1-3.9 19.9-2.6 5.9-6.2 10.8-10.8 14.9-4.6 4.1-9.9 7.2-16.1 9.3-6.2 2.1-12.8 3.2-20 3.2H26 8.1 0v7.5h35.5c8.5 0 16.4-1.3 23.5-3.8 7.1-2.5 13.3-6.1 18.6-10.8 5.2-4.7 9.3-10.4 12.3-17.2 2.9-6.8 4.4-14.5 4.4-23.1C94.2 338.3 92.8 330.6 89.9 323.7zM89.9 31.8c-2.9-6.8-7-12.6-12.3-17.3C72.3 9.9 66.2 6.3 59 3.8 51.9 1.2 44 0 35.5 0H0v7.5h35.1c7.1 0 13.7 1.1 19.9 3.2 6.2 2.1 11.6 5.2 16.2 9.3 4.6 4.1 8.2 9.1 10.8 14.9 2.6 5.9 3.9 12.5 3.9 19.9 0 7.4-1.3 14.1-3.9 19.9-2.6 5.9-6.2 10.8-10.8 14.9-4.6 4.1-9.9 7.2-16.1 9.3-6.2 2.1-12.8 3.2-20 3.2H8.1V50.5H0v59.3h35.5c8.5 0 16.4-1.3 23.5-3.8 7.1-2.5 13.3-6.1 18.6-10.8 5.2-4.7 9.3-10.4 12.3-17.2 2.9-6.8 4.4-14.5 4.4-23.1C94.2 46.4 92.8 38.7 89.9 31.8z"/>
+               <g class="first-e">
+                  <rect x="120.2" y="102.3" fill="#E3222F" width="78.1" height="7.5"/>
+                  <polygon fill="#E3222F" points="120.2,0 120.2,59.3 190,59.3 190,51.8 128.3,51.8 128.3,7.5 198.4,7.5 198.4,0"/>
+               </g>
+               <g class="last-l">
+                  <polygon fill="#E3222F" points="231,394.2 231,392.2 231,291.9 222.9,291.9 222.9,401.7 231,401.7"/>
+                  <rect x="247.1" y="394.2" fill="#E3222F" width="50.9" height="7.5"/>
+               </g>
+            </g>
+         </svg>
+      </div>
+      <!-- ./main logo -->
+
+      <!-- synopsis text -->
+      <div class="synopsis">
+         <h3><em>De la mano del Diez</em> es un proyecto conducido por <em>Diego Armando Maradona</em> y <em>Víctor Hugo Morales</em> durante el <em>Mundial de Fútbol Rusia 2018</em> que será emitido diariamente en horario Prime Time, desde el <em>13 de junio</em>, un día antes de la inauguración de la Copa, hasta el <em>15 de julio</em> que se juega la final. El tema central será el de fútbol y la política alrededor de este deporte, de la misma forma en que se abordaron estos temas en el mundial de fútbol de Brasil 2014.</h3>
+      </div>
+      <!-- ./synopsis text -->
+   </header>
+   <!--./hero -->
+
+   <main id="content" class="main">
+
+      <!-- timeline section -->
+      <section id="el-diego" class="section">
+         <h2 class="section-heading">El Diego</h2>
+         <!-- timeline carousel -->
+         <div class="timeline-carousel">
+            <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <span class="year">1960</span>
+                     <div class="container-text">
+                        <p>El 30 de octubre nace en Villa Fiorito, partido de Lanús, en el conurbano bonaerense. Crece en la modesta casa de Azamor 525, esquina Mario Bravo.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1969</div>
+                     <div class="container-text">
+                        <p>El 30 de octubre nace en Villa Fiorito, partido de Lanús, en el conurbano bonaerense. Crece en la modesta casa de Azamor 525, esquina Mario Bravo.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <span class="year">1971</span>
+                     <div class="container-text">
+                        <p>Hace las maravillas del público en los entretiempos de los partidos de Argentinos Juniors.</p>
+                        <p>Se une a los Cebollitas, equipo infantil de Argentinos Juniors que permanece 136 partidos invicto.</p>
+                        <p>Viaja por primera vez fuera de Argentina, acompañando al equipo Cebollitas en una gira por Uruguay.</p>
+                        <p>Por primera vez un diario le dedica una nota, pero escribe mal su apellido: Caradona.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1973</div>
+                     <div class="container-text">
+                        <p>En diciembre brilla en el regreso de los Juegos Nacionales Evita, competencia infantil-juvenil deportiva creada por el gobierno de Juan Domingo Perón.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <span class="year">1976</span>
+                     <div class="container-text">
+                        <p>El 20 de octubre debuta en la Primera División Argentina, con Argentinos Juniors, a la edad de 15 años.</p>
+                        <p>El 14 de noviembre marca su primer gol oficial, contra San Lorenzo de Mar del Plata.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1977</div>
+                     <div class="container-text">
+                        <p>El 27 de febrero debuta en la Selección Argentina, ante Hungría. Tiene solamente 16 años.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1978</div>
+                     <div class="container-text">
+                        <p>Queda afuera de la lista de 22 jugadores que participarán en la Copa del Mundo Argentina 1978.</p>
+                        <p>Se consagra goleador del Campeonato Metropolitano de la Primera División Argentina.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1979</div>
+                     <div class="container-text">
+                        <p>El 2 de junio anota su primer gol internacional con la Selección Argentina, ante Escocia.</p>
+                        <p>El 7 de septiembre se consagra campeón mundial juvenil con la Selección Argentina, en Japón.</p>
+                        <p>Se consagra goleador del Campeonato Metropolitano de la Primera División Argentina.</p>
+                        <p>Se consagra goleador del Campeonato Nacional Argentino.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1980</div>
+                     <div class="container-text">
+                        <p>Se consagra goleador del Campeonato Metropolitano de la Primera División Argentina.</p>
+                        <p>Se consagra goleador del Campeonato Nacional Argentino.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1981</div>
+                     <div class="container-text">
+                        <p>El 20 de febrero firma contrato con Boca Juniors, el club más popular de la Argentina y del que Diego es hincha.</p>
+                        <p>El 22 de febrero debuta con la camiseta de Boca Juniors, ante Talleres. Esa misma tarde, Víctor Hugo Morales relata su primer partido en la radiofonía argentina. Diego en el césped y Víctor Hugo en el micrófono, comparten ese primer gol.</p>
+                        <p>El 10 de abril disputa su primer Superclásico. Marca un gol en la victoria de Boca Juniors 3-0 sobre River Plate.</p>
+                        <p>El 16 de agosto se consagra campeón argentino con Boca Juniors (sería su único título en el fútbol argentino).</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1982</div>
+                     <div class="container-text">
+                        <p>El 13 de junio debuta en la Copa del Mundo. Argentina cae 0-1 ante Bélgica, en Barcelona.</p>
+                        <p>El 2 de julio sufre la expulsión en el partido Argentina-Brasil. Argentina queda afuera de la Copa del Mundo España 1982.</p>
+                        <p>El 18 de agosto se concreta su pase al FC Barcelona.</p>
+                        <p>El 4 de septiembre debuta en el FC Barcelona, y anota el gol en la derrota 1-2 ante Valencia.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1983</div>
+                     <div class="container-text">
+                        <p>El 26 de junio gana la Copa del Rey con el FC Barcelona, ante el Real Madrid. También gana la Copa de la Liga y la Supercopa de España.</p>
+                        <p>El 24 de septiembre sufre la lesión más dura de su carrera, ante Athletic, de Bilbao: Andoni Goikoetxea le fractura el tobillo izquierdo.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1984</div>
+                     <div class="container-text">
+                        <p>El 5 de mayo se produce una batahola durante la final de la Copa del Rey, ante Athletic de Bilbao. Diego es suspendido por tres meses.</p>
+                        <p>El 5 de julio se incorpora al Napoli, de la Serie A italiana. El estadio San Paolo se llena en su presentación.</p>
+                        <p>El 16 de septiembre debuta oficialmente en el Napoli (pierde 1-3 con Verona).</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1985</div>
+                     <div class="container-text">
+                        <p>Es nombrado embajador de UNICEF.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1986</div>
+                     <div class="container-text">
+                        <p>El 22 de junio marca los dos goles contra Inglaterra. El primero, llamado “la Mano de Dios” y el segundo, el más maravilloso de la historia de la Copa del Mundo.</p>
+                        <p>El 29 de junio se consagran Campeón Mundial con la Selección Argentina, en México.</p>
+                        <p>El 20 de septiembre nace Diego (Sinagra, al que inicialmente no reconoció).</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1987</div>
+                     <div class="container-text">
+                        <p>El 2 de abril nace Dalma.</p>
+                        <p>El 10 de mayo se consagra campeón de la Serie A italiana con el Napoli. También es goleador de la liga.</p>
+                        <p>El 13 de junio gana la Coppa Italia con el Napoli, supera en la final a Atalanta.</p>
+                        <p>Conoce a Fidel Castro, quien sería su gran amigo y padre político.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1988</div>
+                     <div class="container-text">
+                        <p>Se consagra goleador de la Coppa Italia con el Napoli.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1989</div>
+                     <div class="container-text">
+                        <p>El 16 de mayo nace Gianinna.</p>
+                        <p>El 17 de mayo gana la Copa UEFA con el Napoli, supera en la final al Stuttgart (Alemania).</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1990</div>
+                     <div class="container-text">
+                        <p>El 25 de mayo consigue su segundo título de campeón de la Serie A italiana con el Napoli. También gana la Supercoppa de Italia.</p>
+                        <p>El 3 de julio, en Napoles, Argentina elimina a Italia de “su” Copa del Mundo.</p>
+                        <p>El 8 de julio, en Roma, ante un estadio que silba el himno argentino, Alemania se erige campeón del Mundo al vencer 1-0.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1991</div>
+                     <div class="container-text">
+                        <p>El 17 de marzo, tras el partido Napoli-Bari, su control antidopping da positivo. Sufre una suspensión de 15 meses.</p>
+                        <p>Se despide del Napoli. Deja atrás un 259 partidos, 115 goles y un lazo de amor eterno con el pueblo napolitano.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1992</div>
+                     <div class="container-text">
+                        <p>El 4 de octubre, tras cumplir su sanción de 15 meses, debuta en el Sevilla FC, de España, ante el Athletic, de Bilbao.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1993</div>
+                     <div class="container-text">
+                        <p>Se suma a Newell’s Old Boys, de Rosario, donde juega 5 partidos.</p>
+                        <p>En su centenario, la AFA lo nombra “Mejor futbolista argentino de todos los tiempos”.</p>
+                        <p>Campeón de la Copa Artemio Franchi con la Selección Argentina.</p>
+                        <p>El 13 de junio juega su último partido en el Sevilla, tras una fuerte discusión con el DT Carlos Bilardo.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1994</div>
+                     <div class="container-text">
+                        <p>El 21 de junio marca su último gol con la Selección Argentina, ante Grecia, en la Copa del Mundo Estados Unidos 1994.</p>
+                        <p>El 25 de junio juega su último partido con la Selección Argentina, en la Copa del Mundo Estados Unidos 1994, contra Nigeria. Su control antidopping da positivo. Sufre otra suspensión de 15 meses.</p>
+                        <p>Es el jugador que más partido portó la cinta de capitán (16) en la historia de la Copa del Mundo.</p>
+                        <p>El 3 de octubre (CHEQUEAR) debuta como entrenador de Mandiyú, en la Primera División argentina. Lo dirige por 12 partidos.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1995</div>
+                     <div class="container-text">
+                        <p>Entrena a Racing Club, en la Primera División argentina, por 11 partidos.</p>
+                        <p>El 30 de septiembre regresa a Boca Juniors como futbolista, con un amistoso en Corea del Sur.</p>
+                        <p>La Oxford University de Inglaterra lo nombra “Maestro Inspirador de Sueños”.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1997</div>
+                     <div class="container-text">
+                        <p>El 30 de octubre juega su último partido con Boca Juniors, justamente el clásico ante River Plate. Cierra una carrera con 724 partidos y 380 goles.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">1998</div>
+                     <div class="container-text">
+                        <p>Se funda en Rosario, Argentina, la Iglesia Maradoniana. Esta “religión” tiene sus mandamientos, celebra la Navidad Maradoniana y organiza el Te Diegum.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">2000</div>
+                     <div class="container-text">
+                        <p>El 4 de enero es internado en terapia intensiva en el sanatorio Cantegril de Punta del Este, Uruguay.</p>
+                        <p>El 18 de enero inicia su rehabilitación en Cuba.</p>
+                        <p>La encuesta mundial de la FIFA lo erige como “Mejor futbolista de todos los tiempos”.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">2001</div>
+                     <div class="container-text">
+                        <p>El 10 de noviembre celebra su partido homenaje en La Bombonera.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">2004</div>
+                     <div class="container-text">
+                        <p>En abril fue internado en la Clínica Suizo-Argentina de Buenos Aires por “una crisis hipertensiva, con un cuadro basal de cardiopatía dilatada”. El pueblo rezó durante días en la entrada.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">2005</div>
+                     <div class="container-text">
+                        <p>El 20 de marzo se somete a una cirugía bariátrica, para controlar su peso.</p>
+                        <p>El 15 de agosto estrena su programa La Noche del 10, un éxito en la televisión argentina.</p>
+                        <p>El 4 de noviembre recibe a Hugo Chávez y juntos proclaman el “No al ALCA”. Participa también Evo Morales, candidato a la presidencia de Bolivia.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">2007</div>
+                     <div class="container-text">
+                        <p>El 6 de mayo deja la clínica Avril, donde se recuperó luego de sufrir una hepatitis tóxica.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">2008</div>
+                     <div class="container-text">
+                        <p>El 28 de octubre asume la dirección técnica de la Selección Argentina. En noviembre debuta en un amistoso contra Escocia.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">2009</div>
+                     <div class="container-text">
+                        <p>El 19 de febrero nace en Benjamín, su primer nieto, en Madrid.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">2010</div>
+                     <div class="container-text">
+                        <p>Comanda a la Selección Argentina en la Copa del Mundo Sudáfrica 2010.</p>
+                        <p>El periódico inglés The Time lo nombra “Mejor futbolista de la historia de la Copa del Mundo”.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">2011</div>
+                     <div class="container-text">
+                        <p>Asume como entrenador del Al Wasl, de la máxima liga de los Emiratos Árabes Unidos.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">2012</div>
+                     <div class="container-text">
+                        <p>En septiembre es nombrado “Embajador Deportivo” de Dubai, uno de los siete emiratos que componen los Emiratos Árabes Unidos.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">2013</div>
+                     <div class="container-text">
+                        <p>El 13 de febrero nace Diego Fernando, su hijo con Verónica Ojeda (Ojo, ver si él quiere ponerlo).</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">2014</div>
+                     <div class="container-text">
+                        <p>Conduce De Zurda, junto a Víctor Hugo Morales, por Telesur.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">2015</div>
+                     <div class="container-text">
+                        <p>El 10 de abril juega en Bogotá el Partido por la Paz en Colombia.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">2016</div>
+                     <div class="container-text">
+                        <p>Diego y Diego Junior se encuentran en Buenos Aires.</p>
+                        <p>El 12 de octubre se entrevista con el Papa Francisco, en el Vaticano, previo al partido benéfico Unidos por la Paz.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--/timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">2017</div>
+                     <div class="container-text">
+                        <p>Asume como entrenador del Al Fujairah, de la segunda división de los Emiratos Árabes Unidos.</p>
+                        <p>La revista inglesa FourFourTwo lo nombra “Mejor futbolista de la historia”.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--./timeline item-->
+
+               <!--timeline item-->
+               <div class="timeline-carousel__item">
+                  <div class="timeline-carousel__item-inner">
+                     <div class="pointer"></div>
+                     <div class="year">2018</div>
+                     <div class="container-text">
+                        <p>Vuelve a Telesur para vivir el Mundial Rusia 2018 De la mano del Diez.</p>
+                     </div>
+                  </div>
+               </div>
+               <!--./timeline item-->
+            </div>
+         </div>
+         <!--./timeline carousel-->
+      </section>
+      <!-- ./timeline section -->
+
+
+      <!-- videos section -->
+      <section id="videos" class="section">
+         <h2 class="section-heading">Videos</h2>
+         <div class="videos-carousel">
+            <div class="videos-carousel__wrapper">
+               <h3>Próximamente</h3>
+            </div>
+         </div>
+      </section>
+      <!-- ./videos section -->
+
+      <!-- fotos section -->
+      <section id="fotos" class="section">
+         <h2 class="section-heading">Fotos</h2>
+         <!-- Gallery masonry -->
+         <div id="gallery" class="gallery">
+            <div class="gallery-item">
+               <img class="gallery-image" src="images/maradona/maradona-01.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+               <img class="gallery-image" src="images/maradona/maradona-02.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+               <img class="gallery-image" src="images/maradona/maradona-03.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+               <img class="gallery-image" src="images/maradona/maradona-04.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+               <img class="gallery-image" src="images/maradona/maradona-05.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+               <img class="gallery-image" src="images/maradona/maradona-06.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+               <img class="gallery-image" src="images/maradona/maradona-07.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+               <img class="gallery-image" src="images/maradona/maradona-08.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+               <img class="gallery-image" src="images/maradona/maradona-09.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+               <img class="gallery-image" src="images/maradona/maradona-10.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+               <img class="gallery-image" src="images/maradona/maradona-11.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+               <img class="gallery-image" src="images/maradona/maradona-12.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+               <img class="gallery-image" src="images/maradona/maradona-13.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+               <img class="gallery-image" src="images/maradona/maradona-14.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+               <img class="gallery-image" src="images/maradona/maradona-15.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+               <img class="gallery-image" src="images/maradona/maradona-16.jpg" alt="">
+            </div>
+         </div>
+         <!-- ./ Gallery masonry -->
+      </section>
+      <!-- ./fotos section -->
+   </main>
+   <!-- ./main -->
+
+   <!-- share -->
+   <div class="share-container">
+      <a id="gpShare" class="share-link" href="#0">
+         <svg class="social-icon gplus" viewBox="0 0 512 512">
+            <path d="M179.7 237.6L179.7 284.2 256.7 284.2C253.6 304.2 233.4 342.9 179.7 342.9 133.4 342.9 95.6 304.4 95.6 257 95.6 209.6 133.4 171.1 179.7 171.1 206.1 171.1 223.7 182.4 233.8 192.1L270.6 156.6C247 134.4 216.4 121 179.7 121 104.7 121 44 181.8 44 257 44 332.2 104.7 393 179.7 393 258 393 310 337.8 310 260.1 310 251.2 309 244.4 307.9 237.6L179.7 237.6 179.7 237.6ZM468 236.7L429.3 236.7 429.3 198 390.7 198 390.7 236.7 352 236.7 352 275.3 390.7 275.3 390.7 314 429.3 314 429.3 275.3 468 275.3"/>
+         </svg>
+      </a>
+      <a id="twShare" class="share-link" href="#0">
+         <svg class="social-icon twitter" viewBox="0 0 512 512">
+            <path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/>
+         </svg>
+      </a>
+      <a id="fbShare" class="share-link" href="#0">
+         <svg class="social-icon facebook" viewBox="0 0 512 512">
+            <path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"/>
+         </svg>
+      </a>
+   </div>
+   <!-- ./share -->
+
+   <!-- footer -->
+   <footer>
+      <span>Síguenos:</span>
+      <ul class="social">
+         <li>
+            <a href="https://plus.google.com/118206615613074383260/posts" target="_blank">
+               <svg class="gplus" viewBox="0 0 512 512">
+                  <path d="M179.7 237.6L179.7 284.2 256.7 284.2C253.6 304.2 233.4 342.9 179.7 342.9 133.4 342.9 95.6 304.4 95.6 257 95.6 209.6 133.4 171.1 179.7 171.1 206.1 171.1 223.7 182.4 233.8 192.1L270.6 156.6C247 134.4 216.4 121 179.7 121 104.7 121 44 181.8 44 257 44 332.2 104.7 393 179.7 393 258 393 310 337.8 310 260.1 310 251.2 309 244.4 307.9 237.6L179.7 237.6 179.7 237.6ZM468 236.7L429.3 236.7 429.3 198 390.7 198 390.7 236.7 352 236.7 352 275.3 390.7 275.3 390.7 314 429.3 314 429.3 275.3 468 275.3"/>
+               </svg>
+            </a>
+         </li>
+         <li>
+            <a href="https://twitter.com/teleSURtv" target="_blank">
+               <svg class="twitter" viewBox="0 0 512 512">
+                  <path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/>
+               </svg>
+            </a>
+         </li>
+         <li>
+            <a href="http://facebook.com/teleSUR" target="_blank">
+               <svg class="facebook" viewBox="0 0 512 512">
+                  <path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"/>
+               </svg>
+            </a>
+         </li>
+         <li>
+            <a href="https://www.instagram.com/telesurtv" target="_blank">
+               <svg class="instagram" viewBox="0 0 512 512">
+                  <g>
+                     <path d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z"/>
+                     <path d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z"/>
+                     <circle cx="351.5" cy="160.5" r="21.5"/>
+                  </g>
+               </svg>
+            </a>
+         </li>
+         <li>
+            <a href="https://www.youtube.com/user/telesurtv" target="_blank">
+               <svg class="youtube" viewBox="0 0 512 512">
+                  <path d="M422.6 193.6c-5.3-45.3-23.3-51.6-59-54 -50.8-3.5-164.3-3.5-215.1 0 -35.7 2.4-53.7 8.7-59 54 -4 33.6-4 91.1 0 124.8 5.3 45.3 23.3 51.6 59 54 50.9 3.5 164.3 3.5 215.1 0 35.7-2.4 53.7-8.7 59-54C426.6 284.8 426.6 227.3 422.6 193.6zM222.2 303.4v-94.6l90.7 47.3L222.2 303.4z"/>
+               </svg>
+            </a>
+         </li>
+      </ul>
+      <h6>La nueva Televisión del Sur C.A. (TVSUR) RIF: G-20004500-0</h6>
+   </footer>
+   <!--./footer -->
+
+
+
+
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="js/compressed.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>
